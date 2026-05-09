@@ -1,6 +1,6 @@
 # 🎬 CINEIQ - Explainable Movie Recommendation Platform
 
-**Production-Ready** | **Zero Mocks** | **Full ML Pipeline** | **Real-Time Features**
+
 
 A next-generation movie discovery platform combining hybrid ML recommendation engines (SVD + Neural Collaborative Filtering + Content-Based), semantic search with vector embeddings, and real-time watch-together rooms with WebSocket synchronization.
 
@@ -171,9 +171,7 @@ See `.env.example` for all required variables:
 
 MIT License - see [LICENSE](LICENSE) file for details
 
-## 👥 Contributors
 
-Built with ❤️ by IIT Guwahati Coding Club - Even Semester 2026
 
 ## 🙏 Acknowledgments
 
@@ -183,11 +181,6 @@ Built with ❤️ by IIT Guwahati Coding Club - Even Semester 2026
 - [Qdrant](https://qdrant.tech/) for vector search
 - [Clerk](https://clerk.com/) for authentication
 
-## 📧 Contact
-
-- Project Link: [https://github.com/iitg-coding-club/cineiq](https://github.com/iitg-coding-club/cineiq)
-- Issues: [https://github.com/iitg-coding-club/cineiq/issues](https://github.com/iitg-coding-club/cineiq/issues)
-- Email: codingclub@iitg.ac.in
 
 ## 🚀 Deployment Status
 
@@ -195,18 +188,6 @@ Built with ❤️ by IIT Guwahati Coding Club - Even Semester 2026
 - **Backend**: [![Railway](https://img.shields.io/badge/railway-deployed-success)](https://api.cineiq.com)
 - **Status**: [![Uptime](https://img.shields.io/badge/uptime-99.9%25-success)](https://status.cineiq.com)
 
-## 🎯 Submission Checklist
 
-- [x] Docker Compose setup
-- [x] FastAPI backend with async operations
-- [x] Next.js 15 frontend with glassmorphism design
-- [x] PostgreSQL + Redis + Qdrant integration
-- [ ] ML models trained (run `make train`)
-- [ ] Vector embeddings generated (run `make build-embeddings`)
-- [ ] All API endpoints implemented
-- [ ] WebSocket watch-together feature
-- [ ] Framer Motion animations
-- [ ] TMDB API integration
-- [ ] Clerk authentication
 
-**Deadline:** May 14, 2026
+
