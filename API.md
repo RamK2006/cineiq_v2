@@ -584,5 +584,5 @@ const data = await response.json();
 
 ## Support
 
-- API Issues: https://github.com/iitg-coding-club/cineiq/issues
-- Email: api@cineiq.com
+- API Issues: https://github.com/RamK2006/issues
+
