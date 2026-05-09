@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base: #0A0E1A;
+  --bg-surface: #111827;
+  --bg-elevated: #1E293B;
+  --accent-primary: #5B5FFF;
+  --accent-secondary: #A78BFA;
+  --accent-cyan: #38BDF8;
+  --accent-green: #4ADE80;
+  --accent-amber: #F59E0B;
+  --accent-red: #F87171;
+  --accent-gold: #F59E0B;
+  --accent-violet: #A78BFA;
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-muted: #475569;
+  --border: #1E293B;
+  --glass-bg: rgba(17, 24, 39, 0.7);
+  --glass-border: rgba(91, 95, 255, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-inter), sans-serif;
+}
+
+.glass {
+  backdrop-filter: blur(16px) saturate(180%);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}

@@ -1,0 +1,61 @@
+# Git
+.git
+.gitignore
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist
+build
+venv/
+ENV/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+.next/
+out/
+
+# Data
+data/
+*.csv
+*.zip
+
+# ML Models (build separately)
+backend/app/ml/models/*.pkl
+backend/app/ml/models/*.pt
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+coverage/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Documentation
+*.md
+docs/
+
+# CI/CD
+.github/
+
+# Misc
+.DS_Store
+*.log
