@@ -350,7 +350,4 @@ MIT License - See [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by IIT Guwahati Coding Club - Even Semester 2026**
 
-**Status**: ✅ **READY FOR DEPLOYMENT**  
-**Last Updated**: May 9, 2026
