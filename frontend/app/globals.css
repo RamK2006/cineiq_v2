@@ -3,23 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --bg-base: #0A0E1A;
-  --bg-surface: #111827;
-  --bg-elevated: #1E293B;
-  --accent-primary: #5B5FFF;
-  --accent-secondary: #A78BFA;
-  --accent-cyan: #38BDF8;
-  --accent-green: #4ADE80;
-  --accent-amber: #F59E0B;
-  --accent-red: #F87171;
-  --accent-gold: #F59E0B;
-  --accent-violet: #A78BFA;
-  --text-primary: #F1F5F9;
-  --text-secondary: #94A3B8;
-  --text-muted: #475569;
-  --border: #1E293B;
-  --glass-bg: rgba(17, 24, 39, 0.7);
-  --glass-border: rgba(91, 95, 255, 0.2);
+  --bg-base: #0A0A0A;
+  --bg-surface: #1A1A1A;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B8B8B8;
+  --text-muted: #6B6B6B;
+  --accent-amber: #E8A838;
+  --accent-purple: #8B5CF6;
+  --accent-cyan: #06B6D4;
+  --accent-pink: #EC4899;
 }
 
 * {
@@ -31,17 +23,60 @@
 body {
   background-color: var(--bg-base);
   color: var(--text-primary);
-  font-family: var(--font-inter), sans-serif;
 }
 
+/* Film grain texture - subtle */
+.film-grain {
+  position: relative;
+}
+
+.film-grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.015'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+.film-grain > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Gradient mesh background */
+.gradient-mesh {
+  position: fixed;
+  inset: 0;
+  opacity: 0.4;
+  z-index: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(232, 168, 56, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
+  filter: blur(60px);
+}
+
+/* Glow effects */
+.glow-amber {
+  box-shadow: 0 0 20px rgba(232, 168, 56, 0.3), 0 0 40px rgba(232, 168, 56, 0.1);
+}
+
+.glow-purple {
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.4), 0 0 60px rgba(139, 92, 246, 0.2);
+}
+
+/* Glass morphism */
 .glass {
-  backdrop-filter: blur(16px) saturate(180%);
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.font-mono {
-  font-family: var(--font-mono), monospace;
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
+
+
+
